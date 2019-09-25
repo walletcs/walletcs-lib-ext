@@ -1,0 +1,26 @@
+{
+  "name": "walletcs-lib-ext",
+  "version": "1.0.0",
+  "description": "external service connect for @exiliontech/walletcs",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "exiiontech",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "@exiliontech/walletcs": "^2.0.14",
+    "ethers": "^4.0.37",
+    "typescript": "^3.6.3",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/whatwg-fetch": "0.0.33",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0"
+  }
+}
