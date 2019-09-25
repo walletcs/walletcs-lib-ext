@@ -1,5 +1,5 @@
 {
-  "name": "walletcs-lib-ext",
+  "name": "@exiliontech/walletcs-lib-ext",
   "version": "1.0.0",
   "description": "external service connect for @exiliontech/walletcs",
   "main": "lib/index.js",
