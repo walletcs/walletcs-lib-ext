@@ -3,9 +3,8 @@ import { rpcHttp, RPCResponse } from "./network";
 import { EtherTransaction } from "./internalStructures";
 
 export class InfuraProvider extends EtherProvider {
-    constructor(url: string, network: string){
-        super(url, network);
-        console.log(this.url);
+    constructor(url: string){
+        super(url, '');
     }
     async broadcast(tx: string): Promise<string> {
         const response: any = rpcHttp(this.url, 'eth_sendRawTransaction', [tx]);
