@@ -1,6 +1,6 @@
 {
   "name": "@exiliontech/walletcs-lib-ext",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "external service connect for @exiliontech/walletcs",
   "main": "lib/index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
     "@exiliontech/walletcs": "^2.0.14",
+    "abi-decoder": "^2.2.2",
     "ethers": "^4.0.37",
     "typescript": "^3.6.3",
     "whatwg-fetch": "^3.0.0"

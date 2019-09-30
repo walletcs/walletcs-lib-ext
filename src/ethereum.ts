@@ -2,6 +2,7 @@ import * as ethers from 'ethers';
 import {EtherProvider} from "./interfaces";
 import { rpcHttp, RPCResponse, http } from "./network";
 import { EtherTransaction } from "./internalStructures";
+import { addABI, decodeMethod } from 'abi-decoder';
 
 export class InfuraProvider extends EtherProvider {
     private __etherscan: string;
@@ -77,5 +78,13 @@ export class InfuraProvider extends EtherProvider {
         const response = await this.__get_etherscan_api(url);
         if (!response) return response;
         return response[0].tokenName;
+    }
+
+    static addABI(abi: any): void {
+        addABI(abi);
+    }
+
+    static decodeMethod(hexString: string): any {
+        return decodeMethod(hexString);
     }
 }
