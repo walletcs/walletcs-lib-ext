@@ -63,5 +63,11 @@ describe('Ethereum infura service tests', () => {
         const result: any = await provider.etherCall(tx, 'whitelistRelayer', [address, 1]);
 
         expect(result).toBe('0x');
+    });
+
+    it('getContractName for contract', async() => {
+        const provider: InfuraProvider = new InfuraProvider(url);
+        const result: any = await provider.getContractName('0x0Ec4e6C918C7Ec927f1564DD94Fd7771779a70E9');
+        expect(result).toBe(null);
     })
 });
