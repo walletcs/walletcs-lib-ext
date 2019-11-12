@@ -10,7 +10,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
-    "@exiliontech/walletcs": "^2.0.14",
+    "@exiliontech/walletcs": "^2.0.21",
     "abi-decoder": "^2.2.2",
     "ethers": "^4.0.37",
     "typescript": "^3.6.3",

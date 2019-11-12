@@ -1,9 +1,9 @@
-import { BlockCypherProvider } from "../bitcoin";
-import {Outx} from "../internalStructures";
-import {AddressInfo} from "../externalStructures/blockcypher";
+import { BlockCypherProvider } from "../src/bitcoin";
+import { Outx } from "../src/internalStructures";
+import { AddressInfo } from "../src/externalStructures/blockcypher";
 
 describe('Bitcoin blockcypher service tests',  () => {
-    const address: string = 'mfaEV17ReZSubrJ8ohPWB5PQqPiLMgc47X';
+    const address: string = 'muDLjgyx4JEUPHH6XtxtgTjJZsJNYwGDoe';
 
     it('get outxs from provider', async() =>{
         const provider : BlockCypherProvider = new BlockCypherProvider('test3');

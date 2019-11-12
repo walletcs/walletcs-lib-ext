@@ -1,7 +1,7 @@
 import { BlockCypherProvider } from "./bitcoin";
 import { InfuraProvider} from "./ethereum";
 
-module .exports = {
+module.exports = {
     BlockCypherProvider: BlockCypherProvider,
     InfuraProvider: InfuraProvider,
 };

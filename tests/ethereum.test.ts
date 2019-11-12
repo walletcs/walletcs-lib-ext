@@ -1,5 +1,5 @@
-import { InfuraProvider } from '../ethereum';
-import {convertToHex} from "../utils";
+import { InfuraProvider } from '../src/ethereum';
+import {convertToHex} from "../src/utils";
 
 describe('Ethereum infura service tests', () => {
     const url = 'https://rinkeby.infura.io/v3/72d82d32bcb841feb585980272d3185e';
