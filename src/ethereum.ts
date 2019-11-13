@@ -10,7 +10,7 @@ export class InfuraProvider extends EtherProvider {
     constructor(url: string, network?: string){
         super(url, '');
         this.network = network || 'rinkeby';
-        this.__etherscan = this.network === 'mainnet' ? '' : `-${this.network}`;
+        this.__etherscan = this.network === 'homestead' ? '' : `-${this.network}`;
         this.__api = `https://api${this.__etherscan}.etherscan.io/api`;
     }
     async broadcast(tx: string): Promise<string> {
