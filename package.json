@@ -1,10 +1,11 @@
 {
   "name": "@exiliontech/walletcs-lib-ext",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "external service connect for @exiliontech/walletcs",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "compile": "babel src --out-dir lib --extensions '.ts,.js'"
   },
   "author": "exiiontech",
   "license": "Apache-2.0",
@@ -13,15 +14,24 @@
     "@exiliontech/walletcs": "^2.0.21",
     "abi-decoder": "^2.2.2",
     "ethers": "^4.0.37",
+    "husky": "^3.0.9",
     "typescript": "^3.6.3",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.7.2",
     "@types/jest": "^24.0.18",
     "@types/whatwg-fetch": "0.0.33",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run compile",
+      "pre-push": "npm test && npm publish --access public"
+    }
   }
 }
