@@ -1,6 +1,6 @@
 {
   "name": "@exiliontech/walletcs-lib-ext",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "external service connect for @exiliontech/walletcs",
   "main": "lib/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
-    "@exiliontech/walletcs": "^2.0.21",
+    "@exiliontech/walletcs": "^2.0.26",
     "abi-decoder": "^2.2.2",
     "ethers": "^4.0.37",
     "husky": "^3.0.9",

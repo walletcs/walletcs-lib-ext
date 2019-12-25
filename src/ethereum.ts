@@ -14,7 +14,7 @@ export class InfuraProvider extends EtherProvider {
         this.__api = `https://api${this.__etherscan}.etherscan.io/api`;
     }
     async broadcast(tx: string): Promise<string> {
-        const response: any = rpcHttp(this.url, 'eth_sendRawTransaction', [tx]);
+        const response: any = await rpcHttp(this.url, 'eth_sendRawTransaction', [tx]);
         if (!response.error){
             return response.result;
         }
